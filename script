@@ -1,0 +1,52 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/ep/qualtrics/quep5.js'], function(APIConstructor, epExtension){
+	var API = new APIConstructor();
+	var global = API.getGlobal();
+	return epExtension(
+	{
+			//The prime categories.
+			primeCats :  [
+				{
+					name : 'Black people', //Will appear in the data.
+					//An array of all media objects for this category.
+					mediaArray : [
+    				    {image : 'AAF1.bmp'}, 
+    					{image : 'AAF2.bmp'}, 
+    					{image : 'AAF3.bmp'}, 
+    					{image : 'AAF4.bmp'}, 
+    					{image : 'AAF5.bmp'}, 
+    					{image : 'AAM1.bmp'}, 
+    					{image : 'AAM2.bmp'}, 
+    					{image : 'AAM3.bmp'}, 
+    					{image : 'AAM4.bmp'}, 
+    					{image : 'AAM5.bmp'}
+				    ]
+				}, 
+				{
+					name : 'White people', //Will appear in the data.
+					//An array of all media objects for this category.
+					mediaArray : [
+    					{image : 'WhFBl1.bmp'}, 
+    					{image : 'WhFBl2.bmp'}, 
+    					{image : 'WhFBl3.bmp'}, 
+    					{image : 'WhFBl4.bmp'}, 
+    					{image : 'WhFBl5.bmp'}, 
+    					{image : 'WMBl1.bmp'}, 
+    					{image : 'WMBl2.bmp'}, 
+    					{image : 'WMBl3.bmp'}, 
+    					{image : 'WMBl4.bmp'}, 
+    					{image : 'WMBl5.bmp'}
+    				]
+				}
+			],	
+
+			nTrialsPerPrimeTargetPair:15, //How many trials in a block, per prime-target combination (always three blocks).
+			fixationDuration : 500, 
+			errorFBDuration : 1500, 
+			ITIDuration : 500,
+
+			//Set the image folder here.
+			base_url : {
+				image : "https://baranan.github.io/minno-tasks/images/"
+			}
+	});
+});
