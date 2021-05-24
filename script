@@ -30,11 +30,11 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/ep/qualtr
     					{image : 'WhFBl3.bmp'}, 
     					{image : 'WhFBl4.bmp'}, 
     					{image : 'WhFBl5.bmp'}, 
-    					{image : 'WMBl1.bmp'}, 
-    					{image : 'WMBl2.bmp'}, 
-    					{image : 'WMBl3.bmp'}, 
-    					{image : 'WMBl4.bmp'}, 
-    					{image : 'WMBl5.bmp'}
+    					{image : 'WhMBl1.bmp'}, 
+    					{image : 'WhMBl2.bmp'}, 
+    					{image : 'WhMBl3.bmp'}, 
+    					{image : 'WhMBl4.bmp'}, 
+    					{image : 'WhMBl5.bmp'}
     				]
 				}
 			],	
